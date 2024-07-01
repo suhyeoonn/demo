@@ -72,14 +72,14 @@ public class PostsApiControllerTest {
 
         Long updateId = savedPosts.getId();
         String expectedTitle = "title2";
-        String expectedContent = "content";
+        String expectedContent = "content2";
 
         PostsUpdateRequestDto requestDto = PostsUpdateRequestDto.builder()
                 .title(expectedTitle)
                 .content(expectedContent)
                 .build();
 
-        String url = "http://localhost:"+port + "/api/v1/posts/"+updateId;
+        String url = "http://localhost:" + port + "/api/v1/posts/" + updateId;
 
         HttpEntity<PostsUpdateRequestDto> requestEntity = new HttpEntity<>(requestDto);
 
