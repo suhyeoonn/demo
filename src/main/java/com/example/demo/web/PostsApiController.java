@@ -1,11 +1,11 @@
 package com.example.demo.web;
 
 import com.example.demo.service.posts.PostsService;
+import com.example.demo.web.dto.PostsResponseDto;
 import com.example.demo.web.dto.PostsSaveRequestDto;
+import com.example.demo.web.dto.PostsUpdateRequestDto;
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 // 스프링에선 Bean을 주입받는 방식 중 생서자로 주입받는 방식을 가장 권장
 // RequiredArgsConstructor 가 final이 선언된 모든 필드를 인자값으로 하는 생성자를 생성해 줌
@@ -19,5 +19,15 @@ public class PostsApiController {
     @PostMapping("api/v1/posts")
     public Long save(@RequestBody PostsSaveRequestDto requestsDto) {
         return postsService.save(requestsDto);
+    }
+
+    @PutMapping("/api/v1/posts/{id}")
+    public Long update(@PathVariable Long id, @RequestBody PostsUpdateRequestDto requestDto) {
+        return postsService.update(id, requestDto);
+    }
+
+    @GetMapping("/api/v1/posts/{id}")
+    public PostsResponseDto findById(@PathVariable Long id) {
+        return postsService.findById(id);
     }
 }
