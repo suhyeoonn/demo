@@ -6,6 +6,9 @@ const main = {
         $('#btn-update').on('click', () => {
             this.update()
         })
+        $('#btn-delete').on('click', () => {
+            this.delete()
+        })
     },
     save: async function() {
         const data = {
@@ -41,6 +44,22 @@ const main = {
             dataType: 'json',
             contentType: 'application/json; charset=utf-8',
             data: JSON.stringify(data)
+        }).done(function() {
+            alert('success')
+            window.location.href = '/'
+        }).fail(function(error) {
+            alert(JSON.stringify(error))
+        })
+
+    },
+    delete: function() {
+        const id = $('#id').val();
+
+        $.ajax({
+            type: 'DELETE',
+            url: '/api/v1/posts/'+id,
+            dataType: 'json',
+            contentType: 'application/json; charset=utf-8',
         }).done(function() {
             alert('success')
             window.location.href = '/'
