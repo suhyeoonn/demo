@@ -1,11 +1,11 @@
-package com.example.demo.service.posts;
+package com.example.springboot.service.posts;
 
-import com.example.demo.domain.posts.Posts;
-import com.example.demo.domain.posts.PostsRepository;
-import com.example.demo.web.dto.PostsListResponseDto;
-import com.example.demo.web.dto.PostsResponseDto;
-import com.example.demo.web.dto.PostsSaveRequestDto;
-import com.example.demo.web.dto.PostsUpdateRequestDto;
+import com.example.springboot.domain.posts.Posts;
+import com.example.springboot.domain.posts.PostsRepository;
+import com.example.springboot.web.dto.PostsListResponseDto;
+import com.example.springboot.web.dto.PostsResponseDto;
+import com.example.springboot.web.dto.PostsSaveRequestDto;
+import com.example.springboot.web.dto.PostsUpdateRequestDto;
 import org.springframework.transaction.annotation.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

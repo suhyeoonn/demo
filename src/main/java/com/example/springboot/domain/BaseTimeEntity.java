@@ -1,4 +1,4 @@
-package com.example.demo.domain;
+package com.example.springboot.domain;
 
 import jakarta.persistence.EntityListeners;
 import jakarta.persistence.MappedSuperclass;

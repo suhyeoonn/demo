@@ -1,7 +1,7 @@
-package com.example.demo.web;
+package com.example.springboot.web;
 
-import com.example.demo.service.posts.PostsService;
-import com.example.demo.web.dto.PostsResponseDto;
+import com.example.springboot.service.posts.PostsService;
+import com.example.springboot.web.dto.PostsResponseDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

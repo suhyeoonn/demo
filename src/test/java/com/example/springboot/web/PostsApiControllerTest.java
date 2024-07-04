@@ -1,9 +1,9 @@
-package com.example.demo.web;
+package com.example.springboot.web;
 
-import com.example.demo.domain.posts.PostsRepository;
-import com.example.demo.web.dto.PostsSaveRequestDto;
-import com.example.demo.domain.posts.Posts;
-import com.example.demo.web.dto.PostsUpdateRequestDto;
+import com.example.springboot.domain.posts.PostsRepository;
+import com.example.springboot.web.dto.PostsSaveRequestDto;
+import com.example.springboot.domain.posts.Posts;
+import com.example.springboot.web.dto.PostsUpdateRequestDto;
 import org.junit.After;
 import org.junit.Test;
 import org.junit.runner.RunWith;

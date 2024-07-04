@@ -1,6 +1,6 @@
-package com.example.demo.domain.posts;
+package com.example.springboot.domain.posts;
 
-import com.example.demo.domain.BaseTimeEntity;
+import com.example.springboot.domain.BaseTimeEntity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

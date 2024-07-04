@@ -1,4 +1,4 @@
-package com.example.demo.web.dto;
+package com.example.springboot.web.dto;
 
 import org.junit.jupiter.api.Test;
 
